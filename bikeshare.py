@@ -273,7 +273,7 @@ def raw_data(df, position):
 
     #5 lines raw data displayed after each loop
     while True:
-        for position in range(position, len(df.index)):
+        for position in range(position, len(df.index), 5):
             print(df.iloc[position:position+5].to_string())
             position += 5
 
