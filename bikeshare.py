@@ -6,7 +6,12 @@ import datetime as dt
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
-MONTHS_DATA = ('january', 'february', 'march', 'april', 'may', 'june')
+MONTHS_DATA = ('january',
+               'february',
+               'march',
+               'april',
+               'may',
+               'june')
 WEEKDAYS_DATA = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday')
 OPTIONS_DATA = ("yes", "no", "finish")
 SORT_DATA = ('start time', 'end time', 'trip duration', 'start station', 'end station', '')
@@ -268,7 +273,7 @@ def raw_data(df, position):
 
     #5 lines raw data displayed after each loop
     while True:
-        for position in range(position, len(df.index)):
+        for position in range(position, len(df.index), 5):
             print(df.iloc[position:position+5].to_string())
             position += 5
 
