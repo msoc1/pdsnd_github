@@ -2,7 +2,7 @@
 24-07-2020
 
 ### Project Title
-BIKESHARE
+BIKESHARE in Python
 
 ### Description
 project was created to find statistics about bike rentals in 3 cities below
